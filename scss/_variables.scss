@@ -1,0 +1,31 @@
+/*font Variables*/
+$os: 'Oswald', sans-serif;
+$ral: 'Raleway', sans-serif;
+
+
+/*Color Variables*/
+$baseColor: #a7cb00; 
+$dip: #000000;
+$pfont: #666666; 
+
+
+/*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,400,500,600,700');
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+
+

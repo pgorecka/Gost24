@@ -1,0 +1,135 @@
+/* Home Banner Area css
+============================================================================================ */
+
+
+.blog_banner{
+	min-height: 780px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin-bottom: 0px;
+	.banner_inner{
+		background: #04091e;
+		position: relative; 
+		overflow: hidden;
+		width: 100%;
+		min-height: 780px;
+		z-index: 1;
+		.overlay{
+			background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+			opacity: .5;
+			height: 125%;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			z-index: -1;
+		}
+		.blog_b_text{
+			max-width: 700px;
+			margin: auto;
+			color: #fff;
+			margin-top: 40px;
+			h2{
+				font-size: 60px;
+				font-weight: 500;
+				font-family: $ral;
+				line-height: 66px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 16px;
+				margin-bottom: 35px;
+			}
+			.white_bg_btn{
+				line-height: 42px;
+				padding: 0px 45px;
+			}
+		}
+	}
+}
+
+.banner_box{
+	max-width: 1620px;
+	margin: auto;
+}
+.banner_area{
+	position: relative;
+	z-index: 1;
+	background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+	background-size: cover;
+	.banner_inner{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		z-index: 1;
+		padding-top: 80px;
+		padding-bottom: 80px;
+//		.overlay{
+//			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+//			position: absolute;
+//			left: 0;
+//			right: 0;
+//			top: 0;
+//			height: 125%;
+//			bottom: 0;
+//			z-index: -1;
+//			opacity: .5;
+//		}
+		.banner_content{
+			max-width: 655px;
+			background: #fff;
+			padding: 50px 65px;
+			position: relative;
+			border-radius: 5px;
+			&:before{
+				content: "";
+				width: 313px;
+				height: 216px;
+				background: rgba(167, 203, 0, .80);
+				position: absolute;
+				left: -50px;
+				top: -30px;
+				z-index: -1;
+			}
+			h2{
+				color: $dip;
+				font-size: 36px;
+				margin-bottom: 0px;
+				display: inline-block;
+				text-transform: uppercase;
+			}
+			.page_link{
+				display: inline-block;
+				float: right;
+				padding-top: 10px;
+				a{
+					font-size: 14px;
+					color: $pfont;
+					font-family: $ral;
+					margin-right: 32px;
+					font-weight: 300;
+					position: relative;
+					text-transform: uppercase;
+					&:before{
+						content: "\f0da";
+						font: normal normal normal 14px/1 FontAwesome;
+						position: absolute;
+						right: -25px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&:last-child{
+						margin-right: 0px;
+						&:before{
+							display: none;
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Home Banner Area css
+============================================================================================ */

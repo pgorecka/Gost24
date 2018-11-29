@@ -1,0 +1,55 @@
+/* Home Slider Area css
+============================================================================================ */
+.home_banner_area{
+	border-top: 2px solid $baseColor;
+	position: relative;
+}
+.swiper-slide.swiper-slide-active{
+	.slider_text_inner{
+		left: 0px;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.slider_text_inner{
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 300ms ease;
+	transition-delay: 1.2s;
+	.slider_text{
+		background: #fff;
+		border-radius: 5px;
+		padding: 65px;
+		position: relative;
+		&:before{
+			content: "";
+			width: 360px;
+			height: 530px;
+			background: rgba(167, 203, 0, .80);
+			position: absolute;
+			left: -95px;
+			top: -70px;
+			z-index: -1;
+		}
+		h2{
+			font-size: 48px;
+			color: $dip;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+		}
+		p{
+			margin-bottom: 30px;
+		}
+		.banner_btn{
+			margin-right: 7px;
+		}
+	}
+}
+/* End Home Slider Area css
+============================================================================================ */

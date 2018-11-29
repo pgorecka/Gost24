@@ -1,0 +1,76 @@
+/* Main Button Area css
+============================================================================================ */
+.mission_area{
+	overflow: hidden;
+	.left_img{
+		overflow: hidden;
+	}
+	.col-lg-6{
+		vertical-align: middle;
+		align-self: center;
+	}
+}
+.mission_slider{
+	max-width: 400px;
+	margin-left: 130px;
+	.owl-prev{
+		margin-top: -20px;
+	}
+	.owl-next{
+		margin-top: 20px;
+	}
+	.owl-prev, .owl-next{
+		position: absolute;
+		right: -200px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 40px;
+		color: #e6e6e6;
+		@include transition;
+		cursor: pointer;
+		&:hover{
+			color: $dip;
+		}
+	}
+}
+.mission_text{
+	text-align: center;
+	margin-bottom: 70px;
+	max-width: 400px;
+	h4{
+		color: $dip;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+	&:last-child{
+		margin-bottom: 0px;
+	}
+}
+
+.success_area{
+	overflow: hidden;
+	.success_img{
+		overflow: hidden;
+	}
+	.col-lg-6{
+		vertical-align: middle;
+		align-self: center;
+	}
+	.mission_text{
+		float: right;
+		margin-right: 130px;
+	}
+	.right_dir{
+		.mission_text{
+			float: none;
+			margin-left: 130px;
+		}
+	}
+}
+
+/* End Main Button Area css
+============================================================================================ */

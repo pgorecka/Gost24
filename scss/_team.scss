@@ -1,0 +1,80 @@
+/* Team Area css
+============================================================================================ */
+.team_area{
+	
+}
+.team_slider{
+	
+}
+.team_item{
+	position: relative;
+	&:before{
+		content: "";
+		background: url(../img/team/team-overlay.png) no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+	}
+	.hover_text{
+		position: absolute;
+		left: 0px;
+		bottom: 50px;
+		width: 100%;
+		text-align: center;
+		@include transition;
+		h4{
+			font-size: 24px;
+			color: $dip;
+			text-transform: uppercase;
+			@include transition;
+		}
+		p{
+			color: $dip;
+			margin-bottom: 0px;
+			@include transition;
+		}
+		.list{
+			margin-top: 0px;
+			height: 0px;
+			overflow: hidden;
+			@include transition;
+			opacity: 0;
+			li{
+				display: inline-block;
+				margin-right: 4px;
+				a{
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background: #e9ebee;
+					text-align: center;
+					color: $dip;
+					line-height: 30px;
+				}
+				&:last-child{
+					margin-right: 0px;
+				}
+				&:hover{
+					a{
+						background: $baseColor;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	&:hover{
+		.list{
+			height: 30px;
+			overflow: visible;
+			opacity: 1;
+			margin-top: 25px;
+			@include transition;
+		}
+	}
+}
+/* End Team Area css
+============================================================================================ */
