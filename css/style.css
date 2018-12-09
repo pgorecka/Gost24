@@ -1,49 +1,6 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky Ahmed
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: HostHub Construction 
-@Author: Rocky Ahmed
-@Developed By: Rocky Ahmed
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
-
-@Default Styles
-
-Table of Content:
-01/ Variables
-02/ predefin
-03/ header
-04/ button
-05/ banner
-06/ breadcrumb
-07/ about
-08/ team
-09/ project 
-10/ price 
-11/ team 
-12/ blog 
-13/ video  
-14/ features  
-15/ career  
-16/ contact 
-17/ footer
-
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
-/*=================== fonts ====================*/
+/*=================== fonts and colors ====================*/
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,400,500,600,700");
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
+
 .list {
   list-style: none;
   margin: 0px;
@@ -53,7 +10,6 @@ Table of Content:
 a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -90,6 +46,12 @@ button:focus {
   padding-bottom: 120px;
 }
 
+.p_130 {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 0;
+}
+
 .pad_top {
   padding-top: 120px;
 }
@@ -109,6 +71,11 @@ button:focus {
 
 .mt-14 {
   margin-top: 14%;
+}
+
+.ts-m {
+  word-spacing: 0.2mm;
+  letter-spacing: 0.1mm;
 }
 
 @media (min-width: 1200px) {
@@ -133,7 +100,7 @@ button:focus {
   }
 }
 
-/* Main Title Area css
+/* Title
 ============================================================================================ */
 .main_title {
   text-align: left;
@@ -167,10 +134,11 @@ button:focus {
   opacity: .6;
 }
 
-/* End Main Title Area css
+/* end Title
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
+
+/* Header
+============================================================================================ */
 .header_area {
   position: absolute;
   width: 100%;
@@ -178,7 +146,6 @@ button:focus {
   left: 0;
   z-index: 99;
   -webkit-transition: background 0.4s, all 0.3s linear;
-  -o-transition: background 0.4s, all 0.3s linear;
   transition: background 0.4s, all 0.3s linear;
 }
 
@@ -238,7 +205,6 @@ button:focus {
     text-align: left;
     opacity: 0;
     -webkit-transition: all 300ms ease-in;
-    -o-transition: all 300ms ease-in;
     transition: all 300ms ease-in;
     visibility: hidden;
     display: block;
@@ -261,7 +227,6 @@ button:focus {
   z-index: 3;
   opacity: 0;
   -webkit-transition: all 400ms linear;
-  -o-transition: all 400ms linear;
   transition: all 400ms linear;
 }
 
@@ -272,7 +237,6 @@ button:focus {
   border-bottom: 1px solid #ededed;
   margin-left: 0px;
   -webkit-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
@@ -281,7 +245,6 @@ button:focus {
   color: #000000;
   padding: 0px 30px;
   -webkit-transition: all 150ms linear;
-  -o-transition: all 150ms linear;
   transition: all 150ms linear;
   display: block;
   margin-right: 0px;
@@ -324,11 +287,9 @@ button:focus {
   right: 0;
   background: #fff;
   -webkit-transform: translateY(70px);
-  -ms-transform: translateY(70px);
   transform: translateY(70px);
   -webkit-transition: background 500ms ease, -webkit-transform 500ms ease;
   transition: background 500ms ease, -webkit-transform 500ms ease;
-  -o-transition: transform 500ms ease, background 500ms ease;
   transition: transform 500ms ease, background 500ms ease;
   transition: transform 500ms ease, background 500ms ease, -webkit-transform 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -357,7 +318,6 @@ button:focus {
   font-size: 12px;
   margin-right: 5px;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -380,9 +340,10 @@ button:focus {
   font-size: 12px;
 }
 
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Home Banner Area css
+/* end Header
+============================================================================================ */
+
+/* Banner
 ============================================================================================ */
 .blog_banner {
   min-height: 780px;
@@ -402,7 +363,7 @@ button:focus {
 }
 
 .blog_banner .banner_inner .overlay {
-  background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+  background: url("../img/banner/banner-2.jpg") no-repeat scroll center center;
   opacity: .5;
   height: 125%;
   position: absolute;
@@ -445,8 +406,16 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
-  background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+  background: url("../img/banner/banner.jpg") no-repeat scroll center center;
   background-size: cover;
+}
+
+.banner_import {
+  background: url("../img/banner/banner-3.jpg") no-repeat scroll center center;
+}
+
+.banner_news {
+  background: url("../img/banner/banner-4.jpg") no-repeat scroll center center;
 }
 
 .banner_area .banner_inner {
@@ -508,7 +477,6 @@ button:focus {
   right: -25px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -519,12 +487,18 @@ button:focus {
 .banner_area .banner_inner .banner_content .page_link a:last-child:before {
   display: none;
 }
+.banner-area {
+  line-height: 26px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  color: #666666;
+}
 
-/* End Home Banner Area css
+/* end Banner
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Home Blog Area css
+
+/* Blog 
 ============================================================================================ */
 .home_blog_area .col-lg-3 {
   vertical-align: middle;
@@ -576,9 +550,10 @@ button:focus {
   color: #d06414;
 }
 
-/* End Home Blog Area css
+/* end Blog
 ============================================================================================ */
-/* Causes Area css
+
+/* Causes
 ============================================================================================ */
 .causes_slider .owl-dots {
   text-align: center;
@@ -682,8 +657,9 @@ button:focus {
   color: #000000;
 }
 
-/* End Causes Area css
+/* end Causes
 ============================================================================================ */
+
 /*================= latest_blog_area css =============*/
 .latest_blog_area {
   background: #f9f9ff;
@@ -699,7 +675,6 @@ button:focus {
 
 .single-recent-blog-post .thumb img {
   -webkit-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
 
@@ -711,7 +686,6 @@ button:focus {
   line-height: 24px;
   padding: 10px 0px 13px;
   -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -727,7 +701,6 @@ button:focus {
 
 .single-recent-blog-post:hover img {
   -webkit-transform: scale(1.23) rotate(10deg);
-  -ms-transform: scale(1.23) rotate(10deg);
   transform: scale(1.23) rotate(10deg);
 }
 
@@ -775,7 +748,6 @@ button:focus {
   background: rgba(34, 34, 34, 0.8);
   color: #fff;
   -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +848,6 @@ button:focus {
   color: #000000;
   font-weight: 600;
   -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -960,7 +931,6 @@ button:focus {
   padding: 0px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -989,7 +959,6 @@ button:focus {
   font-size: 14px;
   color: #000000;
   -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -1016,7 +985,6 @@ button:focus {
   color: #000000;
   margin-bottom: 4px;
   -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -1037,7 +1005,6 @@ button:focus {
 .blog_right_sidebar .post_category_widget .cat-list li {
   border-bottom: 2px dotted #eee;
   -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   padding-bottom: 12px;
 }
@@ -1082,10 +1049,10 @@ button:focus {
   vertical-align: top;
   font-size: 12px;
   line-height: 36px;
-  padding: 0px 0px 0px 15px;
-  border: 1px solid #eeeeee;
+  padding: 0px 0px 0px 1px;
   border-right: 0px;
 }
+
 
 .blog_right_sidebar .newsletter_widget .form-control {
   font-size: 12px;
@@ -1129,6 +1096,23 @@ button:focus {
   border-radius: 0;
 }
 
+.btn-qa { 
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.06mm;
+}
+
+.btn-qa:hover {
+  color: #d06414;
+}
+
+.c-qa {
+  max-height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .blog_right_sidebar .newsletter_widget .text-bottom {
   font-size: 12px;
 }
@@ -1144,7 +1128,6 @@ button:focus {
   padding: 0px 13px;
   margin-bottom: 8px;
   -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #000000;
   font-size: 12px;
@@ -1213,25 +1196,24 @@ button:focus {
 }
 
 /*============ Start Blog Single Styles  =============*/
-.single-post-area .social-links {
+.social-links {
   padding-top: 10px;
 }
 
-.single-post-area .social-links li {
+.social-links li {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.single-post-area .social-links li a {
+.social-links li a {
   color: #cccccc;
   padding: 7px;
   font-size: 14px;
   -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
-.single-post-area .social-links li a:hover {
+.social-links li a:hover {
   color: #000000;
 }
 
@@ -1296,7 +1278,6 @@ button:focus {
 
 .single-post-area .navigation-area .nav-left .thumb img {
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -1304,7 +1285,6 @@ button:focus {
   margin-left: 20px;
   opacity: 0;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -1333,7 +1313,6 @@ button:focus {
 
 .single-post-area .navigation-area .nav-right .thumb img {
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -1341,7 +1320,6 @@ button:focus {
   margin-right: 20px;
   opacity: 0;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -1436,7 +1414,6 @@ button:focus {
   display: block;
   font-weight: 600;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -1530,126 +1507,30 @@ button:focus {
 }
 
 /*============ End Blog Single Styles  =============*/
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Reservation Form Area css
-============================================================================================ */
-.reservation_form_area .res_form_inner {
-  max-width: 555px;
-  margin: auto;
-  -webkit-box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.1);
-  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.1);
-  padding: 75px 50px;
-  position: relative;
+
+/*============== Contact ================*/
+
+.contact_area_2 .contact-wrapper {
+  padding-top: 45px;
+  padding-left: 165px;
 }
 
-.reservation_form_area .res_form_inner:before {
-  content: "";
-  background: url(../img/contact-shap-1.png);
-  position: absolute;
-  left: -125px;
-  height: 421px;
-  width: 98px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.contact_area_2 .form-title {
+  height: 30px;
+  margin-top: 45px;
+  opacity: 0.9;
+  background: #d06414;
+  line-height: 22px;
 }
 
-.reservation_form_area .res_form_inner:after {
-  content: "";
-  background: url(../img/contact-shap-2.png);
-  position: absolute;
-  right: -125px;
-  height: 421px;
-  width: 98px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.reservation_form .form-group input {
-  height: 40px;
-  border-radius: 0px;
-  border: 1px solid #eeeeee;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  padding: 0px 15px;
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group input.placeholder {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group input:-moz-placeholder {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group input::-moz-placeholder {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group input::-webkit-input-placeholder {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group .res_select {
-  height: 40px;
-  border: 1px solid #eeeeee;
-  border-radius: 0px;
-  width: 100%;
-  padding: 0px 15px;
-  line-height: 36px;
-}
-
-.reservation_form .form-group .res_select .current {
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #999999;
-}
-
-.reservation_form .form-group .res_select:after {
-  content: "\e874";
-  font-family: 'Linearicons-Free';
-  color: #cccccc;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  border: none;
-  margin-top: -17px;
-  font-size: 13px;
-  right: 22px;
-}
-
-.reservation_form .form-group:last-child {
+.contact_area_2 .form-title h3 {
+  font-weight: normal;
   text-align: center;
-}
-
-/* End Reservation Form Area css
-============================================================================================ */
-/*============== contact_area css ================*/
-.mapBox {
-  height: 420px;
-  margin-bottom: 80px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  letter-spacing: 0.7mm;
+  vertical-align: middle;
 }
 
 .contact_info .info_item {
@@ -1672,7 +1553,7 @@ button:focus {
   line-height: 24px;
   color: "Raleway", sans-serif;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: #000000;
 }
 
@@ -1682,67 +1563,93 @@ button:focus {
 
 .contact_info .info_item p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 3px;
   padding: 2px 0px;
 }
 
-.contact_form .form-group {
-  margin-bottom: 10px;
+#contact-form .btn-send {
+  background-color: #d06414;
+  border-color: #cc8046;
+  float: right;
 }
 
-.contact_form .form-group .form-control {
-  font-size: 13px;
-  line-height: 26px;
-  color: #999;
-  border: 1px solid #eeeeee;
-  font-family: "Raleway", sans-serif;
-  border-radius: 0px;
-  padding-left: 20px;
+#contact-form p {
+  float: right;
 }
 
-.contact_form .form-group .form-control:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: none;
+#contact-form-2 .btn-send {
+  background-color: #d06414;
+  border-color: #cc8046;
+  float: right;
 }
 
-.contact_form .form-group .form-control.placeholder {
-  color: #999;
+#contact-form-2 p {
+  float: right;
 }
 
-.contact_form .form-group .form-control:-moz-placeholder {
-  color: #999;
+.phone-contact-intro {
+  text-align: center;
 }
 
-.contact_form .form-group .form-control::-moz-placeholder {
-  color: #999;
+.phone-contact-intro span {
+  margin-top: 30px;
+  display: inline-block;
 }
 
-.contact_form .form-group .form-control::-webkit-input-placeholder {
-  color: #999;
+.biuro-photo {
+  text-align: center;
 }
 
-.contact_form .form-group textarea {
-  resize: none;
+.biuro-photo span {
+  display: inline-block;
+  margin: 15px;
 }
 
-.contact_form .form-group textarea.form-control {
-  height: 140px;
+.adres_item {
+  text-align: center;
 }
 
-.contact_form .submit_btn {
-  margin-top: 20px;
-  cursor: pointer;
+.adres_item span p {
+  display: inline-block;
+  line-height: 23px;
+  color: #000000;
 }
 
-/* Contact Success and error Area css
+.adres_item span h6 {
+  color: #000000;
+  font-size: 20px;
+}
+
+.phone-widget-2 { 
+  text-align: center;
+  margin-top: 30px;
+}
+
+.phone-widget-2 span {
+  display: inline-block;
+  color: #d06414;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.phone-widget-2 span a {
+  color: #666666;
+  font-size: 18px;
+  margin: 17px;
+}
+
+.phone-widget-2 span a:hover {
+  color: #d06414;
+  font-size: 18px;
+}
+
+/* Contact Success and error
 ============================================================================================ */
 .modal-message .modal-dialog {
   position: absolute;
   top: 36%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%) !important;
-  -ms-transform: translateX(-50%) translateY(-50%) !important;
   transform: translateX(-50%) translateY(-50%) !important;
   margin: 0px;
   max-width: 500px;
@@ -1779,11 +1686,10 @@ button:focus {
   display: block;
 }
 
-/* End Contact Success and error Area css
+/* End Contact Success and error
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/*============== Elements Area css ================*/
+
+/*============== Elements ================*/
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -1832,8 +1738,9 @@ button:focus {
   color: #d06414;
 }
 
-/*============== End Elements Area css ================*/
-/*==============Elements Button Area css ================*/
+/*============== End Elements ================*/
+
+/*============== Elements Button ================*/
 .elements_button .title_color {
   margin-bottom: 30px;
   color: #000000;
@@ -2025,11 +1932,10 @@ button:focus {
   padding-bottom: 0px;
 }
 
-/*==============End Elements Button Area css ================*/
-/* =================================== */
-/*  Elements Page Styles
-/* =================================== */
-/*---------- Start Elements Page -------------*/
+/*============== End Elements Button================*/
+
+/*============== Elements Page Styles ==============*/
+
 .generic-banner {
   margin-top: 60px;
   text-align: center;
@@ -2187,8 +2093,6 @@ h6 {
   font-weight: 500;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -2529,8 +2433,6 @@ h6 {
   background-size: cover !important;
   height: 200px;
   -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -2728,8 +2630,6 @@ h6 {
   border-radius: 50%;
   background: #f8b600;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
@@ -2787,8 +2687,6 @@ h6 {
   border-radius: 8.5px;
   cursor: pointer;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -2802,8 +2700,6 @@ h6 {
   border-radius: 50%;
   background: #fff;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
@@ -2860,8 +2756,6 @@ h6 {
   background: transparent;
   border-radius: 8.5px;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -2876,8 +2770,6 @@ h6 {
   border-radius: 50%;
   background: #fff;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
@@ -2930,7 +2822,7 @@ h6 {
 }
 
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  background: url("../img/elements/primary-check.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -2968,7 +2860,7 @@ h6 {
 }
 
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  background: url("../img/elements/success-check.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -3011,7 +2903,7 @@ h6 {
 }
 
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  background: url("../img/elements/disabled-check.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -3049,7 +2941,7 @@ h6 {
 }
 
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  background: url("../img/elements/primary-radio.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -3087,7 +2979,7 @@ h6 {
 }
 
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  background: url("../img/elements/success-radio.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -3141,7 +3033,7 @@ h6 {
 }
 
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url("../img/elements/disabled-radio.png") no-repeat center center/cover;
   border: none;
 }
 
@@ -3171,8 +3063,6 @@ h6 {
 .default-select .nice-select .list .option {
   font-weight: 300;
   -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
@@ -3237,8 +3127,6 @@ h6 {
 .form-select .nice-select .list .option {
   font-weight: 300;
   -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
@@ -3266,8 +3154,8 @@ h6 {
 }
 
 /*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Main Button Area css
+
+/* Main Button
 ============================================================================================ */
 .main_btn {
   padding: 0px 40px;
@@ -3275,7 +3163,6 @@ h6 {
   z-index: 2;
   display: inline-block;
   -webkit-transition: all 400ms linear;
-  -o-transition: all 400ms linear;
   transition: all 400ms linear;
   text-align: center;
   color: #fff;
@@ -3286,7 +3173,6 @@ h6 {
   border: 1px solid #d06414;
   border-radius: 5px;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3314,13 +3200,10 @@ h6 {
   border: 1px solid #dddddd;
   cursor: pointer;
   -webkit-transition: color 0ms linear;
-  -o-transition: color 0ms linear;
   transition: color 0ms linear;
 }
 
 .main_btn2:hover {
-  background-image: -moz-linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);
-  background-image: -webkit-linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);
   background-image: -ms-linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);
   -webkit-box-shadow: 0px 10px 30px 0px rgba(115, 73, 251, 0.3);
   box-shadow: 0px 10px 30px 0px rgba(115, 73, 251, 0.3);
@@ -3344,7 +3227,6 @@ h6 {
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3368,7 +3250,6 @@ h6 {
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
   -webkit-box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
@@ -3392,7 +3273,6 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3413,7 +3293,6 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3423,7 +3302,7 @@ h6 {
   border-color: #d06414;
 }
 
-/* Main Blog Banner Button Area css
+/* Blog Banner Button
 ============================================================================================ */
 .white_bg_btn {
   background: #fff;
@@ -3436,7 +3315,6 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
   border: none;
 }
@@ -3446,7 +3324,7 @@ h6 {
   color: #fff;
 }
 
-/* End Main Blog Banner Button Area css
+/* End Blog Banner Button
 ============================================================================================ */
 .blog_btn {
   border: 1px solid #eeeeee;
@@ -3467,14 +3345,12 @@ h6 {
   color: #fff;
 }
 
-/* End Main Button Area css
+/* End Main Button 
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Home Slider Area css
+
+/* Home Slider
 ============================================================================================ */
 .home_banner_area {
-  border-top: 2px solid #d06414;
   position: relative;
 }
 
@@ -3489,17 +3365,14 @@ h6 {
   left: 50px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   z-index: 5;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
   transition: all 300ms ease;
   -webkit-transition-delay: 1.2s;
-  -o-transition-delay: 1.2s;
   transition-delay: 1.2s;
 }
 
@@ -3537,11 +3410,10 @@ h6 {
   margin-right: 7px;
 }
 
-/* End Home Slider Area css
+/* End Home Slider 
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Main css
+
+/* Main 
 ============================================================================================ */
 .mission_area {
   overflow: hidden;
@@ -3586,18 +3458,25 @@ h6 {
   right: -200px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 40px;
   color: #ebaf82;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
   cursor: pointer;
 }
 
 .mission_slider .owl-prev:hover, .mission_slider .owl-next:hover {
   color: #000000;
+}
+
+.mission_slider_1 {
+  padding: 0;
+  min-width: 500px;
+}
+
+.mission_slider_1 p {
+  font-size: 13px;
 }
 
 .mission_text {
@@ -3641,6 +3520,34 @@ h6 {
   margin-bottom: 0px;
 }
 
+.mission_slider_1 a {
+  color: #d06414;
+}
+
+.mission_slider_1 a h5 {
+  color: #000000;
+}  
+
+.mission_slider_1 a p {
+  color: #000000;
+}
+
+.mission_slider_1 a:hover {
+  font-weight: bold;
+}
+
+.slider_1 {
+  min-width: 500px;
+  max-width: 580px;
+}
+.no-slider .owl-prev {
+   display: none;
+}
+  
+.no-slider .owl-next {
+  display: none;
+}
+
 .success_area {
   overflow: hidden;
 }
@@ -3666,11 +3573,10 @@ h6 {
 }
 
 
-/* koniec Main css
+/* end Main
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Project Area css
+
+/* Project
 ============================================================================================ */
 .project_area {
   overflow: hidden;
@@ -3690,7 +3596,6 @@ h6 {
   height: 100%;
   opacity: 0;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3705,7 +3610,6 @@ h6 {
   text-align: center;
   bottom: 15px;
   -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
 
@@ -3731,7 +3635,6 @@ h6 {
   right: -10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -3764,9 +3667,9 @@ h6 {
   margin-top: 22px;
 }
 
-/* End Project Area css
+/* End Project
 ============================================================================================ */
-/* Estimate Area css
+/* Estimate
 ============================================================================================ */
 .project_know_area {
   background: #d06414;
@@ -3786,14 +3689,16 @@ h6 {
 }
 
 .project_know_area a {
-  color: #446597;
+  color: #3e5b86;
   font-weight: bold;
+  font-size: 15px;
   letter-spacing: 0.2em;
   word-spacing: 0.4em;
+  margin-left: 4px;
 }
 
 .project_know_area a:hover {
-  color: #446597;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -3802,13 +3707,14 @@ h6 {
 }
 
 .project_know_area .white_btn:hover {
-  background-color: #5e7caa;
+  background-color: #3e5b86;
   color: #fff;
 }
 
-/* End Estimate Area css
+/* End Estimate
 ============================================================================================ */
-/* Portfolio Details Area css
+
+/* Portfolio Details
 ============================================================================================ */
 .portfolio_details_inner .row {
   margin-bottom: 65px;
@@ -3887,104 +3793,11 @@ h6 {
   margin-right: 0px;
 }
 
-/* End Portfolio Details Area css
+/* End Portfolio Details
 ============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Team Area css
+
+/* Footer
 ============================================================================================ */
-.team_item {
-  position: relative;
-}
-
-.team_item:before {
-  content: "";
-  background: url(../img/team/team-overlay.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-.team_item .hover_text {
-  position: absolute;
-  left: 0px;
-  bottom: 50px;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-}
-
-.team_item .hover_text h4 {
-  font-size: 24px;
-  color: #000000;
-  text-transform: uppercase;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-}
-
-.team_item .hover_text p {
-  color: #000000;
-  margin-bottom: 0px;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-}
-
-.team_item .hover_text .list {
-  margin-top: 0px;
-  height: 0px;
-  overflow: hidden;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-  opacity: 0;
-}
-
-.team_item .hover_text .list li {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.team_item .hover_text .list li a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: #e9ebee;
-  text-align: center;
-  color: #000000;
-  line-height: 30px;
-}
-
-.team_item .hover_text .list li:last-child {
-  margin-right: 0px;
-}
-
-.team_item .hover_text .list li:hover a {
-  background: #d06414;
-  color: #fff;
-}
-
-.team_item:hover .list {
-  height: 30px;
-  overflow: visible;
-  opacity: 1;
-  margin-top: 25px;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-}
-
-/* End Team Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/*============== footer-area css ===============*/
 .footer-area {
   background: #f9f9ff;
   padding-top: 120px;
@@ -3999,12 +3812,16 @@ h6 {
   font-size: 14px;
 }
 
+.single-footer-widget ul li {
+  color: #777;
+  font-size: 14px;
+}
+
 .single-footer-widget ul li a {
   line-height: 25px;
   display: inline;
   color: #777;
   -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   margin-bottom: 13px;
   font-size: 14px;
@@ -4061,19 +3878,33 @@ h6 {
   position: absolute;
   right: 0px;
   top: 0px;
+  display: inline;
+}
+
+.mc-footer {
+  max-width: 40px;
+}
+
+#mce-EMAIL {
+  border: none;
+  padding-left: 5px;
+}
+
+#mc-embedded-subscribe {
+  border: none;
+  width: 100%;
+}
+
+.side-newsletter {
+  padding-left: 100px;
 }
 
 .kontakt-widget {
   max-width: 230px;
 }
 
-.kontakt-widget ul li a span {
-  color: transparent;  
-  text-shadow: 0 0 0 #d06414;
-}
-
-.mapa-widget ul li a {
-  font-size: 14px;
+.mapa-widget ul li {
+  font-size: 10px;
 }
 
 .footer_title {
@@ -4108,6 +3939,3 @@ h6 {
 .footer-bottom .footer-text a {
   color: #d06414;
 }
-/*---------------------------------------------------- */
-
-/*# sourceMappingURL=style.css.map */

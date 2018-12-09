@@ -1,251 +1,325 @@
-@media (max-width:1500px){
-	.mission_slider .owl-prev, .mission_slider .owl-next {
+@media (max-width:1500px) {
+
+	.mission_slider .owl-prev,
+	.mission_slider .owl-next {
 		right: auto;
 		left: 50%;
 		bottom: -100px;
 		top: auto;
 	}
+
 	.mission_slider .owl-prev {
 		margin-top: 0px;
 		margin-left: -50px;
 	}
+
 	.mission_slider .owl-next {
 		margin-top: 0px;
 	}
+
 	.h_blog_text {
 		padding: 0px 20px;
 	}
+
 	.h_blog_text h4 {
 		font-size: 18px;
 	}
 }
-@media (max-width:1300px){
+
+@media (max-width:1300px) {
 	.header_area .navbar .nav .nav-item.submenu ul {
 		left: auto;
 		right: 0px;
 	}
+
 	.h_blog_text h4 {
 		font-size: 16px;
 		margin-bottom: 6px;
 	}
+
 	.h_blog_text p {
 		font-size: 12px;
 		line-height: 22px;
 	}
 }
-@media (max-width:1199px){
-	/* Main Menu Area css
+
+@media (max-width:1199px) {
+
+	/* Menu
 	============================================================================================ */
 	.header_area .navbar .nav .nav-item {
 		margin-right: 28px;
 	}
-	/* End Main Menu Area css
+
+	/* Koniec Menu
 	============================================================================================ */
-	/* Home Banner Area css
+	/* Baner
 	============================================================================================ */
 	.home_banner_area .banner_inner {
 		padding: 100px 0px;
 	}
-	/* End Home Banner Area css
+
+	/* koniec Baner
 	============================================================================================ */
 	.mission_slider {
-		max-width: 400px;
-		margin-left: 0px;
 		margin: auto;
 	}
+
+	.slider_1 {
+		margin-left: 100px;
+	}
+
 	.success_area .mission_text {
 		float: none;
 		margin-right: 0px;
 		margin: auto;
 	}
+
 	.success_area .right_dir .mission_text {
 		float: none;
 		margin-left: 0px;
 		margin: auto;
 	}
+
 	.h_blog_text {
 		padding: 0px 15px;
 	}
+
 	.h_blog_text .cat {
 		margin-bottom: 0px;
 	}
+
 	.portfolio_details_inner .portfolio_right_text {
 		padding-left: 0px;
 	}
+
 	.mapa-widget ul li a {
 		font-size: 11px;
 	}
 }
 
-@media (max-width:991px){
-	/* Main Menu Area css
+@media (max-width:991px) {
+
+	/* Menu
 	============================================================================================ */
-    .navbar-toggler {
-        border: none;
-        border-radius: 0px;
-        padding: 0px;
-        cursor: pointer;
-        margin-top: 27px;
-        margin-bottom: 23px;
-    }
+	.navbar-toggler {
+		border: none;
+		border-radius: 0px;
+		padding: 0px;
+		cursor: pointer;
+		margin-top: 27px;
+		margin-bottom: 23px;
+	}
+
 	.header_area .navbar {
 		background: #fff;
 	}
-    .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
+
+	.navbar-toggler[aria-expanded="false"] span:nth-child(2) {
 		opacity: 1;
 	}
+
 	.navbar-toggler[aria-expanded="true"] span:nth-child(2) {
 		opacity: 0;
 	}
+
 	.navbar-toggler[aria-expanded="true"] span:first-child {
+		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 		position: relative;
 		top: 7.5px;
 	}
+
 	.navbar-toggler[aria-expanded="true"] span:last-child {
+		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 		bottom: 6px;
 		position: relative;
 	}
+
 	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
 		line-height: 40px;
 	}
-	.navbar-toggler span{
+
+	.navbar-toggler span {
 		display: block;
 		width: 25px;
 		height: 3px;
 		background: #d06414;
 		margin: auto;
 		margin-bottom: 4px;
+		-webkit-transition: all 400ms linear;
 		transition: all 400ms linear;
 		cursor: pointer;
 	}
-	.header_area + section, .header_area + row, .header_area + div {
+
+	.header_area+section,
+	.header_area+row,
+	.header_area+div {
 		margin-top: 71px;
 	}
-    .navbar .container{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .nav{
-        padding: 0px 0px;
-    }
-    .header_top .nav{
-        padding: 0px;
-    }
-    .header_area .navbar .nav .nav-item .nav-link{
-        line-height: 40px;
-        margin-right: 0px;
-        display: block;
+
+	.navbar .container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.nav {
+		padding: 0px 0px;
+	}
+
+	.header_top .nav {
+		padding: 0px;
+	}
+
+	.header_area .navbar .nav .nav-item .nav-link {
+		line-height: 40px;
+		margin-right: 0px;
+		display: block;
 		border-bottom: 1px solid #ededed33;
 		border-radius: 0px;
-    }
-    .header_area .navbar .search{
-        margin-left: 0px;
-    }
-	.header_area .navbar-collapse{
+	}
+
+	.header_area .navbar .search {
+		margin-left: 0px;
+	}
+
+	.header_area .navbar-collapse {
 		max-height: 340px;
 		overflow-y: scroll;
 	}
+
 	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
 		padding: 0px 15px;
 	}
+
 	.header_area .navbar .nav .nav-item {
 		margin-right: 0px;
 	}
+
 	.home_banner_area .banner_inner .banner_content .banner_map_img {
 		display: none;
 	}
-	/* End Main Menu Area css
+
+	.banner_area { 
+		background: url("../img/banner/banner_2.jpg") no-repeat scroll center center;
+	}
+
+	.home_banner_area img {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 991px;
+		height: 600px;
+		padding-left: 991px;
+		background: url("../img/slider/slider-1-m.jpg") no-repeat;
+	}
+
+	/* koniec Menu
 	============================================================================================ */
-	/* Blog page Area css
+	/* Aktualnośći
 	============================================================================================ */
-	.categories_post img{
-        width: 100%;
-    }
+	.categories_post img {
+		width: 100%;
+	}
+
 	.categories_post {
 		max-width: 360px;
 		margin: 0 auto;
 	}
-	.blog_categorie_area .col-lg-4{
-        margin-top: 30px;
-    }
-    .blog_area{
-        padding-bottom: 80px;
-    }
-    .single-post-area .blog_right_sidebar{
-        margin-top: 30px;
-    }
-	/* End Blog page Area css
-	============================================================================================ */
-	
-	/* Contact Page Area css
-	============================================================================================ */
-	.contact_info{
-		margin-bottom: 50px;
+
+	.blog_categorie_area .col-lg-4 {
+		margin-top: 30px;
 	}
-	/* End Contact page Area css
+
+	.blog_area {
+		padding-bottom: 80px;
+	}
+
+	.single-post-area .blog_right_sidebar {
+		margin-top: 30px;
+	}
+
+	/* koniec Aktualnośći
 	============================================================================================ */
-	.home_banner_area .donation_inner{
+
+	/* Kontakt
+	============================================================================================ */
+	.contact_info {
+		margin-bottom: 50px;
+		padding-left: 36%;
+	}
+
+	.contact_area_2 .contact-wrapper {
+		padding-top: 45px;
+		padding-left: 110px;
+	}
+
+	/* koniec Kontakt
+	============================================================================================ */
+	.home_banner_area .donation_inner {
 		margin-bottom: -30px;
 	}
-	.home_banner_area .dontation_item{
+
+	.home_banner_area .dontation_item {
 		max-width: 350px;
 		margin: auto;
 	}
-	/* Footer Area css
+
+	/* Footer
 	============================================================================================ */
-	.footer-area .col-sm-6{
+	.footer-area .col-sm-6 {
 		margin-bottom: 30px;
 	}
-	/* End End Footer Area css
+
+	/* koniec Footer
 	============================================================================================ */
 	.header_area .navbar .nav.navbar-nav.navbar-right {
 		display: none;
 	}
+
 	.mission_area .left_img img {
 		display: none;
 	}
+
 	.mission_area .right_img img {
 		display: none;
 	}
-	/*.mission_area .item {
-		width: 105%;
-	}
-	.mission_area .item_2 {
-		margin-top: -10%;
-		margin-left: 16%;
-		padding-top: 3%;
-		padding-left: 2.5%;
-		padding-bottom: 5%;
-		max-width: 70%;
-	} */
+
 	.mission_slider {
+		max-width: 550px;
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
-	.mission_slider .owl-prev, .mission_slider .owl-next {
+
+	.mission_slider .owl-prev,
+	.mission_slider .owl-next {
 		bottom: 0px;
 	}
+
 	.success_area .mission_text {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
-	.home_blog_area{
+
+	.home_blog_area {
 		max-width: 460px;
 		margin: auto;
 	}
+
 	.h_blog_text .cat {
 		margin-bottom: 8px;
 	}
+
 	.h_blog_text h4 {
 		font-size: 24px;
 		margin-bottom: 15px;
 	}
+
 	.h_blog_text p {
 		font-size: 16px;
 		line-height: 26px;
 	}
+
 	.h_blog_text {
 		padding: 40px 15px;
 	}
@@ -255,6 +329,7 @@
 	.mission_area .item {
 		width: 105%;
 	}
+
 	.mission_area .item_2 {
 		margin-top: -10%;
 		margin-left: 16%;
@@ -263,72 +338,105 @@
 		padding-bottom: 5%;
 		max-width: 70%;
 	}
+
+	.contact-form-2-wrapper form {
+		margin-right: 26%;
+	}
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
 	.home_banner_area {
 		min-height: 500px;
 	}
+
 	.home_banner_area .banner_inner {
 		min-height: 500px;
 	}
+
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;
 	}
+
 	.dlaczego_my_inner {
 		padding-left: 2%;
 		padding-right: 2%;
 		text-align: left;
 	}
-	/* Blog Page Area css
+
+	/* Aktualności
 	============================================================================================ */
-    .blog_banner .banner_inner .blog_b_text h2 {
+	.blog_banner .banner_inner .blog_b_text h2 {
 		font-size: 40px;
 		line-height: 50px;
 	}
-	.blog_info.text-right{
+
+	.blog_info.text-right {
 		text-align: left !important;
 		margin-bottom: 10px;
 	}
-	/* End Blog Page Area css
+
+	/* koniec Aktualności
 	============================================================================================ */
 	.home_banner_area .banner_inner .banner_content h3 {
 		font-size: 30px;
 	}
+
 	.home_banner_area .banner_inner .banner_content p br {
 		display: none;
 	}
+
 	.home_banner_area .banner_inner .banner_content h3 span {
 		line-height: 45px;
 		padding-bottom: 0px;
 		padding-top: 0px;
 	}
-	/* Footer Area css
+
+	.contact_area_2 .contact-wrapper {
+		padding-left: 0;
+	}
+
+	.contact_area_2 .form-title h3 {
+		font-size: 17px;
+	}
+
+	.contact_area_2 .form-title {
+		height: 21px;
+		line-height: 17px;
+	}
+
+	/* Footer 
 	============================================================================================ */
-	.footer-bottom{
+	.footer-bottom {
 		text-align: center;
 	}
+
 	.footer-bottom .footer-social {
 		text-align: center;
 		margin-top: 15px;
 	}
+
 	.kontakt-widget {
 		width: 50%;
 	}
-	/* End End Footer Area css
+
+	/* koniec Footer
 	============================================================================================ */
 	.swiper-slide img {
 		height: 500px;
 	}
+
 	.slider_text_inner .slider_text::before {
 		display: none;
 	}
+
 	.slider_text_inner .slider_text h2 {
 		font-size: 28px;
 	}
+
 	.slider_text_inner .slider_text {
 		padding: 35px;
 	}
+
 	.slider_text_inner .slider_text .banner_btn {
 		display: block;
 		margin-right: 0px;
@@ -336,149 +444,319 @@
 		text-align: center;
 		margin-bottom: 10px;
 	}
+
 	.portfolio_details_inner .portfolio_right_text {
 		padding-left: 0px;
 		padding-top: 40px;
 	}
 }
-@media (max-width:600px){
-	
+
+@media (max-width:580px) {
+	.contact_area_2 .contact-wrapper {
+		padding: 25px;
+	}
 }
-@media (max-width:575px){
+
+@media (max-width:575px) {
 	.top_menu {
 		display: none;
 	}
-    /* Home Banner Area css
+
+	/* Baner
 	============================================================================================ */
 	.home_banner_area .banner_inner .banner_content h2 {
 		font-size: 28px;
 		line-height: 38px;
 	}
+
 	.home_banner_area {
 		min-height: 500px;
 	}
+
 	.home_banner_area .banner_inner {
 		min-height: 500px;
 	}
+
 	.blog_banner .banner_inner .blog_b_text {
 		margin-top: 38px;
 	}
-	.home_banner_area .banner_inner .banner_content img{
+
+	.home_banner_area .banner_inner .banner_content img {
 		display: none;
 	}
+
 	.home_banner_area .banner_inner .banner_content h5 {
 		margin-top: 0px;
 	}
-	/* End Home Banner Area css
+
+	/* koniec Baner
 	============================================================================================ */
 	.p_120 {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
+
 	.main_title h2 {
 		font-size: 25px;
 	}
-	/* Elements Area css
-	============================================================================================ */
-	.sample-text-area {
-		padding: 70px 0 70px 0;
-	}
-	.generic-blockquote {
-		padding: 30px 15px 30px 30px;
-	}
-	/* End Elements Area css
-	============================================================================================ */
-	
-	/* Blog Page Area css
+
+
+	/* Aktualności
 	============================================================================================ */
 	.blog_details h2 {
 		font-size: 20px;
 		line-height: 30px;
 	}
+
 	.blog_banner .banner_inner .blog_b_text h2 {
 		font-size: 28px;
 		line-height: 38px;
 	}
-	/* End Blog Page Area css
+
+	/* koniec Aktualności
 	============================================================================================ */
-	/* Footer Area css
+
+	/* Footer 
 	============================================================================================ */
 	.footer-area {
 		padding: 70px 0px;
 	}
-	/* End End Footer Area css
+
+	/* koniec Footer
 	============================================================================================ */
 	.pad_top {
 		padding-top: 70px;
 	}
+
 	.success_area .mission_text {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
+
 	.mission_slider {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
+
 	.footer-bottom {
 		padding-bottom: 0px;
 	}
+
 	.border_line {
 		margin-top: 50px;
 	}
+
 	.banner_area .banner_inner .banner_content .page_link {
 		display: block;
 		float: none;
 		padding-top: 10px;
 	}
+
 	.banner_area .banner_inner .banner_content::before {
 		top: -17px;
 	}
+
 	.banner_area .banner_inner .banner_content {
 		padding: 50px 30px;
 	}
 }
 
-@media (max-width:480px){
-	/* Main Menu Area css
+@media (max-width: 550px) {
+	.mission_slider_1 {
+		min-width: 400px;
+		max-width: 400px;
+	}
+
+	.mission_slider_1 p {
+		font-size: 11px;
+	}
+
+	.mission_slider_1 h5 {
+		font-size: 13px;
+	}
+
+	.mission_area_1 {
+		padding: 5%;
+	}
+}
+
+@media (max-width:480px) {
+
+	/* Menu
 	============================================================================================ */
-	.header_area .navbar-collapse{
+	.header_area .navbar-collapse {
 		max-height: 250px;
 	}
-	/* End Main Menu Area css
+
+	/* koniec Menu
 	============================================================================================ */
-	
-	/* Home Banner Area css
+
+	/* Baner
 	============================================================================================ */
-    .home_banner_area .banner_inner .banner_content {
+	.home_banner_area .banner_inner .banner_content {
 		padding: 0px 0px;
 		margin-top: 0px;
 	}
+
 	.banner_content .white_btn {
 		display: block;
 	}
+
 	.home_banner_area .banner_inner .banner_content h3 {
 		font-size: 24px;
 	}
-	/* End Home Banner Area css
+
+	/* koniec Baner
 	============================================================================================ */
 	.banner_area .banner_inner .banner_content h2 {
 		font-size: 32px;
 	}
-	/* Blog Page Area css
+
+	/* Aktualności
 	============================================================================================ */
 	.comments-area .thumb {
 		margin-right: 10px;
 	}
+
 	.mission_area .item {
 		width: 95%;
 		text-align: center;
 	}
+
 	.mission_area .item_2 {
 		margin-left: 0;
 		margin-bottom: 16%;
 		width: 110%;
 	}
-	
-	/* End Blog Page Area css
+
+	.contact_info {
+		margin-bottom: 50px;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	.newsletter-widget p {
+		font-size: 13px;
+	}
+
+	.single-footer-widget ul li a i {
+		display: none;
+	}
+
+	.single-footer-widget ul li {
+		font-size: 13px;
+	}
+
+	.single-footer-widget ul li a {
+		font-size: 13px;
+	}
+
+	.banner_area {
+		background: url("../img/banner/banner_3.jpg") no-repeat scroll center center;
+	}
+
+	.banner_import .banner_inner .banner_content h2 {
+		font-size: 26px;
+	}
+
+	.contact_form_area .banner_inner .banner_content h2 {
+		font-size: 22px;
+	}
+
+	.contact_form_area .banner_inner .banner_content p {
+		font-size: 12px;
+	}
+
+	.banner_import .banner_inner .banner_content p {
+		font-size: 12px;
+	}
+
+	.home_banner_area img {
+		height: 600px;
+		background: url("../img/slider/slider-1-s.jpg");
+	}
+
+	.project_know_area h3 {
+		font-size: 28px;
+	}
+
+	.project_know_area a {
+		font-size: 13px;
+	}
+
+	.project_know_area p {
+		font-size: 13px;
+	}
+
+	.btn-qa {
+		font-size: 14px;
+		padding-left: 4px;
+	}
+}
+
+/* koniec Aktualności
 	============================================================================================ */
+
+@media (max-width: 420px) {
+	.mission_slider_1 {
+		min-width: 350px;
+		max-width: 350px;
+	}
+
+	.mission_area_1 {
+		padding: 2%;
+	}
+}
+
+@media (max-width: 400px) {
+	.btn-qa {
+		font-size: 13px;
+		padding-left: 4px;
+	}
+
+	.card-header {
+		padding-left: 0;
+	}
+
+	.c-qa .qa-btn {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 350px) {
+	.mission_slider_1 {
+		min-width: 290px;
+		max-width: 290px;
+		padding: 0;
+		padding-bottom: 23%;
+	}
+
+	.mission_slider_1 .mission_text p {
+		font-size: 10px;
+	}
+
+	.mission_slider_1 .mission_text h5 {
+		text-align: left;
+		font-size: 11px;
+	}
+
+	.mission_area_1 {
+		padding: 1%;
+	}
+
+	.project_know_area .resp_btn {
+		font-size: 11px;
+	}
+
+	.project_item .hover_text h4 {
+		font-size: 16px;
+		position: relative;
+		top: 14px;
+	}
+
+	.btn-qa {
+		font-size: 12px;
+		padding-left: 1.2px;
+	}
+
 }
